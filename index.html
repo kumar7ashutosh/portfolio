@@ -3,42 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Kumar Ashutosh - Data Science, Machine Learning, MLOps, and Deep Learning projects.">
+  <meta name="author" content="Kumar Ashutosh">
   <title>Kumar Ashutosh | Data Science Portfolio</title>
+
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    /* --- Base Styles --- */
     body {
       font-family: 'Inter', sans-serif;
       background: #0d1117;
       color: #e6edf3;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
+    /* --- Header --- */
     header {
       text-align: center;
       padding: 2rem 1rem;
       background: #161b22;
+      border-bottom: 1px solid #30363d;
     }
-    h1 { color: #58a6ff; }
+    h1 { color: #58a6ff; margin-bottom: 0.3rem; }
+    header p { color: #8b949e; margin: 0; }
+
+    /* --- Project Container --- */
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
+
+    /* --- Project Cards --- */
     .card {
       background: #161b22;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       overflow: hidden;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.4);
     }
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
+      border-bottom: 1px solid #30363d;
     }
     .card-content {
       padding: 1rem;
@@ -46,29 +65,53 @@
     .card-content h3 {
       color: #58a6ff;
       margin: 0 0 0.5rem;
+      text-transform: capitalize;
     }
     .links a {
       color: #9be9a8;
       margin-right: 10px;
       text-decoration: none;
+      font-weight: 600;
     }
     .links a:hover {
       text-decoration: underline;
     }
+
+    /* --- Footer --- */
+    footer {
+      background: #161b22;
+      color: #8b949e;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      border-top: 1px solid #30363d;
+    }
+    .social-links a {
+      color: #58a6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
+  <!-- Header Section -->
   <header>
     <h1>🚀 Kumar Ashutosh</h1>
     <p>Data Science | Machine Learning | MLOps | Deep Learning</p>
   </header>
 
+  <!-- Projects Section -->
   <section class="container">
+
     <div class="card">
       <img src="assets/rainfall.png" alt="Rainfall Predictor">
       <div class="card-content">
         <h3>Rainfall Predictor</h3>
-        <p>Machine Learning model predicting rainfall using weather data added map feature. Deployed on Streamlit.</p>
+        <p>Machine Learning model predicting rainfall using weather data with map feature. Deployed on Streamlit.</p>
         <div class="links">
           <a href="https://github.com/kumar7ashutosh/Rainfall-prediction-complete-pipeline-and-training" target="_blank">GitHub</a>
           <a href="https://predicting-rainfall.streamlit.app/" target="_blank">Live Demo</a>
@@ -77,10 +120,10 @@
     </div>
 
     <div class="card">
-      <img src="assets/mlops.png" alt="MLOPS">
+      <img src="assets/mlops.png" alt="MLOps Project">
       <div class="card-content">
-        <h3>END TO END MLOPS</h3>
-        <p>End to end mlops project including data engineering, fast api, aws and s3.</p>
+        <h3>End-to-End MLOps</h3>
+        <p>End-to-end MLOps project including data engineering, FastAPI, AWS, and S3 integration.</p>
         <div class="links">
           <a href="https://github.com/kumar7ashutosh/MLOPS_NEW_2" target="_blank">GitHub</a>
         </div>
@@ -88,10 +131,10 @@
     </div>
 
     <div class="card">
-      <img src="assets/cv.png" alt="face detection">
+      <img src="assets/cv.png" alt="Face Detection CNN">
       <div class="card-content">
-        <h3>face detection cnn</h3>
-        <p>face detection via opencv, siamese neural network</p>
+        <h3>Face Detection CNN</h3>
+        <p>Face detection implemented using OpenCV and Siamese Neural Network for verification.</p>
         <div class="links">
           <a href="https://github.com/kumar7ashutosh/face_detection" target="_blank">GitHub</a>
         </div>
@@ -99,22 +142,22 @@
     </div>
 
     <div class="card">
-      <img src="assets/nlp.png" alt="natural language processing with mlops">
+      <img src="assets/nlp.png" alt="NLP with MLOps">
       <div class="card-content">
-        <h3>nlp mlops</h3>
-        <p>end to end pipeline engineered project applied mlflow and data versioning with upload on aws-s3 bucket</p>
+        <h3>NLP MLOps</h3>
+        <p>End-to-end NLP pipeline with MLflow tracking, data versioning, and deployment to AWS S3.</p>
         <div class="links">
           <a href="https://github.com/kumar7ashutosh/NLP_MLOPS" target="_blank">GitHub</a>
-          <a href="https://dagshub.com/kumarashutoshbtech2023/dl_mlops.mlflow/#/experiments/1/runs/9222c9c479564c6bb8104dd2989f0996" target="_blank">mlflow record</a>
+          <a href="https://dagshub.com/kumarashutoshbtech2023/dl_mlops.mlflow/#/experiments/1/runs/9222c9c479564c6bb8104dd2989f0996" target="_blank">MLflow Record</a>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <img src="assets/course.png" alt="Course recommender">
+      <img src="assets/course_recommend.png" alt="Course Recommender">
       <div class="card-content">
-        <h3>course recommender</h3>
-        <p>recommending course via nlp and cosine similarity</p>
+        <h3>Course Recommender</h3>
+        <p>Recommending courses using NLP and cosine similarity based on user preferences.</p>
         <div class="links">
           <a href="https://github.com/kumar7ashutosh/course_recommender" target="_blank">GitHub</a>
         </div>
@@ -122,5 +165,15 @@
     </div>
 
   </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Kumar Ashutosh | Built using HTML & CSS</p>
+    <div class="social-links">
+      <a href="https://github.com/kumar7ashutosh" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/kumar-ashutosh-4588a3272" target="_blank">LinkedIn</a> |
+      <a href="mailto:dsoctka20@gmail.com">>Email</a>
+    </div>
+  </footer>
 </body>
 </html>
