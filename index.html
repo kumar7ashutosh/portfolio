@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumar Ashutosh | Data Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #161b22;
+    }
+    h1 { color: #58a6ff; }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #161b22;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      color: #58a6ff;
+      margin: 0 0 0.5rem;
+    }
+    .links a {
+      color: #9be9a8;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Kumar Ashutosh</h1>
+    <p>Data Science | Machine Learning | MLOps | Deep Learning</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <img src="assets/rainfall.png" alt="Rainfall Predictor">
+      <div class="card-content">
+        <h3>Rainfall Predictor</h3>
+        <p>Machine Learning model predicting rainfall using weather data added map feature. Deployed on Streamlit.</p>
+        <div class="links">
+          <a href="https://github.com/kumar7ashutosh/Rainfall-prediction-complete-pipeline-and-training" target="_blank">GitHub</a>
+          <a href="https://predicting-rainfall.streamlit.app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/mlops.png" alt="MLOPS">
+      <div class="card-content">
+        <h3>END TO END MLOPS</h3>
+        <p>End to end mlops project including data engineering, fast api, aws and s3.</p>
+        <div class="links">
+          <a href="https://github.com/kumar7ashutosh/MLOPS_NEW_2" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/cv.png" alt="face detection">
+      <div class="card-content">
+        <h3>face detection cnn</h3>
+        <p>face detection via opencv, siamese neural network</p>
+        <div class="links">
+          <a href="https://github.com/kumar7ashutosh/face_detection" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/nlp.png" alt="natural language processing with mlops">
+      <div class="card-content">
+        <h3>nlp mlops</h3>
+        <p>end to end pipeline engineered project applied mlflow and data versioning with upload on aws-s3 bucket</p>
+        <div class="links">
+          <a href="https://github.com/kumar7ashutosh/NLP_MLOPS" target="_blank">GitHub</a>
+          <a href="https://dagshub.com/kumarashutoshbtech2023/dl_mlops.mlflow/#/experiments/1/runs/9222c9c479564c6bb8104dd2989f0996" target="_blank">mlflow record</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/course.png" alt="Course recommender">
+      <div class="card-content">
+        <h3>course recommender</h3>
+        <p>recommending course via nlp and cosine similarity</p>
+        <div class="links">
+          <a href="https://github.com/kumar7ashutosh/course_recommender" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
